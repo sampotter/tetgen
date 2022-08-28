@@ -5,7 +5,7 @@ tetgen_inc = include_directories('.')
 tetgen_lib = static_library(
   'tetgen',
   ['tetgen.cxx', 'predicates.cxx'],
-  cpp_args : ['TETLIBRARY']
+  cpp_args : ['-DTETLIBRARY']
 )
 
 tetgen_dep = declare_dependency(
