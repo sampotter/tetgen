@@ -12,3 +12,6 @@ tetgen_dep = declare_dependency(
   link_with : tetgen_lib,
   include_directories : tetgen_inc
 )
+
+meson.override_dependency('tetgen', tetgen_dep)
+meson.override_dependency('tetgen-1.6.0', tetgen_dep)
